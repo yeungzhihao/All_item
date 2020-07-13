@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.background{
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+        .one {
+            width: 800px;
+            height: 90px;
+            clear: both;
+
+        }
+
+
+        .big_box {
+            width: 135px;
+            height: 54px;
+            margin-right: 10px;
+            float: left;
+
+        }
+
+        .box {
+
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+            color: #666;
+            text-align: center;
+            line-height: 54px;
+            overflow: hidden;
+            position: relative;
+
+            z-index: -1;
+
+        }
+
+        .box_one {
+
+            width: 135px;
+            height: 54px;
+            background-color: orange;
+            transform: translateY(0deg);
+            transition: all 0.8s;
+            transition-timing-function:cubic-bezier(0.05, 0.35, 0.73, 1.49);
+            z-index: -10;
+            position: absolute;
+
+        }
+
+        .big_box:hover .box_one {
+
+            transform: translateY(-54px);
+
+        }
+
+        .big_box:hover .box {
+            color: white;
+        }
+
+
+
+        /* /////           右         //////////////// */
+
+        .big_box_two {
+            width: 135px;
+            height: 54px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .box_two {
+
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+            color: #666;
+            text-align: center;
+            line-height: 54px;
+            overflow: hidden;
+            position: relative;
+
+            z-index: -1;
+
+        }
+
+        .box_two_t {
+
+            width: 135px;
+            height: 54px;
+            background-color: orange;
+            transform: translateX(0deg);
+            transition: all 0.8s;
+            z-index: -10;
+            position: absolute;
+            left: -135px;
+            top: 0;
+
+
+        }
+
+        .big_box_two:hover .box_two_t {
+
+            transform: translateX(135px);
+
+        }
+
+        .big_box_two:hover .box_two {
+            color: white;
+        }
+
+
+
+        /* //////////////////左 */
+
+
+        .big_box_two_l {
+            width: 135px;
+            height: 54px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .box_two_l {
+
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+            color: #666;
+            text-align: center;
+            line-height: 54px;
+            overflow: hidden;
+            position: relative;
+
+            z-index: -1;
+
+        }
+
+        .box_two_t_l {
+
+            width: 135px;
+            height: 54px;
+            background-color: orange;
+            transform: translateX(0deg);
+            transition: all 0.8s;
+            z-index: -10;
+            position: absolute;
+            left: 135px;
+            top: 0;
+
+
+        }
+
+        .big_box_two_l:hover .box_two_t_l {
+
+            transform: translateX(-135px);
+
+        }
+
+        .big_box_two_l:hover .box_two_l {
+            color: white;
+        }
+
+
+           /* //////////////////左 */
+
+
+  /* //////////////////下 */
+
+
+  .big_box_two_b {
+            width: 135px;
+            height: 54px;
+            float: left;
+            
+        }
+
+        .box_two_b {
+
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+            color: #666;
+            text-align: center;
+            line-height: 54px;
+            overflow: hidden;
+            position: relative;
+
+            z-index: -1;
+
+        }
+
+        .box_two_t_b {
+
+            width: 135px;
+            height: 54px;
+            background-color: orange;
+            transform: translateX(0deg);
+            transition: all 0.8s;
+            z-index: -10;
+            position: absolute;
+            bottom: -54px;
+            /* top: 0; */
+
+
+        }
+
+        .big_box_two_b:hover .box_two_t_b {
+
+            transform: translateY(-54px);
+
+        }
+
+        .big_box_two_b:hover .box_two_b {
+            color: white;
+        }
+  /* //////////////////下 */
+
+
+        /* 
+        ////////////  放大  ////////// */
+
+        /* .three_o {
+            position: relative;
+            width: 135px;
+            height: 54px;
+           
+        } */
+        .big_box_three {
+            width: 135px;
+            height: 54px;
+            float: left;
+            margin-right: 10px;
+
+        }
+
+        .box_three {
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+
+            color: #666;
+            text-align: center;
+            line-height: 54px;
+            position: relative;
+            overflow: hidden;
+
+
+        }
+
+        .box_three_t {
+            width: 135px;
+            height: 54px;
+            background-color: orange;
+            position: absolute;
+            top: 0;
+            transform: scale(0);
+            transition: all 1s;
+
+        }
+
+        .big_box_three:hover .box_three_t {
+
+            transform: scale(4);
+        }
+
+
+        .big_box_three:hover .font {
+
+            color: white;
+        }
+
+        .font {
+
+            position: absolute;
+            z-index: 5;
+            left: 20px;
+        }
+
+        /* ////////// */
+
+        .big_box_four {
+            width: 135px;
+            height: 54px;
+            float: left;
+
+        }
+
+
+
+        .box_four {
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+
+            color: #666;
+            text-align: center;
+            line-height: 54px;
+            position: relative;
+            overflow: hidden;
+
+
+        }
+
+
+        .box_four_t {
+            width: 135px;
+            height: 54px;
+            border-radius: 50%;
+            background-color: orange;
+            position: absolute;
+            top: 0;
+            transform: scale(0);
+            transition: all 1s;
+
+        }
+
+
+        .big_box_four:hover .box_four_t {
+
+            transform: scale(4);
+        }
+
+
+        .big_box_four:hover .font {
+
+            color: white;
+        }
+
+        .font {
+
+            position: absolute;
+            z-index: 5;
+            left: 20px;
+
+        }
+
+        /* /////////////////// */
+
+        .big_five {
+
+
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+            transform-origin: top;
+            color: #666;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .font_five {
+            text-align: center;
+            line-height: 54px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .big_five:hover {
+
+            animation: move 1s linear;
+        }
+
+
+        @keyframes move {
+
+            0% {
+                transform: skewX(0deg);
+            }
+
+            10% {
+                transform: skewX(-10deg);
+            }
+
+            30% {
+                transform: skewX(8deg);
+            }
+
+            50% {
+                transform: skewX(-8deg);
+            }
+
+            70% {
+                transform: skewX(10deg);
+            }
+
+            90% {
+                transform: skewX(0deg);
+            }
+
+        }
+
+
+        /* ///////////////// */
+        .big_six {
+
+
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+            transform-origin: center;
+            color: #666;
+            float: left;
+        }
+
+        .font_six {
+            text-align: center;
+            line-height: 54px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .big_six:hover {
+
+            animation: move 1s linear;
+        }
+
+
+        @keyframes move {
+
+            0% {
+                transform: skewX(0deg);
+            }
+
+            10% {
+                transform: skewX(-10deg);
+            }
+
+            30% {
+                transform: skewX(8deg);
+            }
+
+            50% {
+                transform: skewX(-8deg);
+            }
+
+            70% {
+                transform: skewX(10deg);
+            }
+
+            90% {
+                transform: skewX(0deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background">Background Transitions</div>
+    <div class="one">
+        <div class="big_box">
+            <div class="box">Sweep To Top
+
+                <div class="box_one"></div>
+            </div>
+        </div>
+
+
+        <div class="big_box_two">
+            <div class="box_two">Sweep To Right
+
+                <div class="box_two_t"></div>
+            </div>
+        </div>
+
+
+        <div class="big_box_two_l">
+            <div class="box_two_l">Sweep To Left
+
+                <div class="box_two_t_l"></div>
+            </div>
+        </div>
+
+
+
+        <div class="big_box_two_b">
+            <div class="box_two_b">Sweep To Left
+
+                <div class="box_two_t_b"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 
+//////////////////////////////// -->
+    <div class="one">
+
+        <div class="big_box_three">
+            <div class="three_o">
+                <div class="box_three">
+                    <div class="font">Rectangle In</div>
+                    <div class="box_three_t"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="big_box_four">
+            <div class="four_o">
+                <div class="box_four">
+                    <div class="font">Rectangle In</div>
+                    <div class="box_four_t"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ///////////////////////// -->
+
+    <div class="one">
+
+        <div class="big_five">
+            <div class="font_five">Wobble Vertical</div>
+        </div>
+
+
+
+        <div class="big_six">
+            <div class="font_six">Wobble Vertical</div>
+        </div>
+
+
+</body>
+
+</html>

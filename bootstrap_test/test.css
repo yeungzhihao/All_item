@@ -1,0 +1,433 @@
+/* .navbar-brand:hover {
+    text-decoration: none;
+} */
+h3{
+  font-size: 23px;
+  font-family: 'Poppins', sans-serif;
+}
+h5{
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+  font-family: 'Sintony', sans-serif;
+}
+
+
+
+/*好重要啊 取消那个logo的hover */
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #FC427B;
+  
+} 
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px){
+.navbar-nav .open .dropdown-menu {
+ 
+    margin-top: 0;
+    background-color: white;
+    box-shadow: none;
+  
+}
+.navbar-nav .open .dropdown-menu>li>a {
+ 
+color: black;
+text-align: center;
+
+}
+
+
+}
+.navbar-header {
+    margin-top: 30px;
+  }
+
+  .nav>li>a {
+    color: black;
+}
+.nav>li>a:hover {
+  color: #FC427B;
+}
+
+.nav>li:first-child>a {
+  color: #FC427B;
+}
+.nav>li>a:hover {
+ 
+  background-color: white;
+}
+
+/* //logo标签 */
+  .navbar-header a.navbar-brand {
+    float: left;
+    display: initial;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #FC427B;
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+    padding: 0;
+    font-family: 'Srisakdi', cursive;
+  }
+  /* .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 100%;
+    line-height: 1;
+  } */
+ 
+/* //调节居中 */
+  .nav {
+    padding: 16px 8px;
+    text-align: center;
+  }
+.dropdown-menu {
+    background-color: #333;
+}
+.dropdown-menu>li>a{
+    color: white;
+}
+
+/* 轮播文字 */
+.carousel-caption h3 {
+  font-size: 3.5em;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+}
+
+.carousel-caption h5 {
+  font-weight: 400;
+  color: #000;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+.carousel-caption {
+  top: -4%;
+  left: 30%;
+  margin-top: 14.5vw;
+  margin-left: auto;
+  text-align: right;
+  max-width: 560px;
+}
+
+
+
+.carousel-caption p a {
+  padding: 12px 25px;
+  background: #FC427B;
+  color: #fff;
+  border: none;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  font-family: 'Sintony', sans-serif;
+}
+
+/* 轮播小圆圈 */
+.carousel-indicators > li {
+  margin: 0 4px;
+  padding: 4px;
+  background: #FC427B;
+  border: 4px solid #fff;
+}
+
+
+/* */
+
+.welcome-left{
+  margin-top: 30px;
+}
+
+.v-welcome .welcome-left h4 {
+  color: #464646;
+  line-height: 1.5;
+  letter-spacing: 7px;
+  font-family: initial;
+  margin-top: 16px;
+  margin-bottom: 50px;
+}
+
+.v-welcome .welcome-left h3 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-shadow: 20px 5px 3px rgba(0, 0, 0, 0.06);
+}
+
+
+
+.circle-right{
+  width: 84px;
+  height: 84px;
+  background-color: #FC427B;
+  border-radius: 50px;
+}
+
+.circle-left{
+  width: 84px;
+  height: 84px;
+  background-color: #FC427B;
+  border-radius: 50px;
+}
+
+.v-welcome i{
+line-height: 84px;
+padding-left: 30px;
+color: white;
+font-size: 25px;
+}
+
+
+.pink-back{
+
+
+  background-color: #FC427B;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.ab{
+  padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+
+.eye{
+width: 90px;
+height: 90px;
+border: 1px solid white;
+border-radius:50% ;
+margin: auto;
+
+
+}
+
+.big_eye{
+
+  margin-top: 20px;
+}
+
+.eye i{
+  color: white;
+font-size: 30px;
+padding-left: 30px;
+padding-top: 30px;
+}
+
+
+
+
+
+
+
+.pink-back .pink-all h4 {
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 48px 0px 16px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.pink-back .pink-all p{
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+
+}
+.like span {
+  margin-right: 5rem;
+  color: #999;
+}
+
+.like span:hover {
+  color: #FC427B;
+  cursor: pointer;
+}
+.like span i{
+ color: #FC427B;
+
+}
+
+
+.women{
+  background: url("./images/bg2.jpg");
+  background-size: cover;
+  padding-bottom:13rem;
+padding-top: 13rem;
+margin-top: 3rem;
+}
+
+
+.text-t {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.text-m{
+  font-weight: 800;
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+
+.text-b {
+ 
+  font-size: 17px;
+
+  font-family: 'Sintony', sans-serif;
+}
+
+.hard_title{
+
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+.hard_title h4{
+letter-spacing: 1px;
+font-weight: lighter;
+color: #999;
+
+
+
+}
+
+.cool{
+
+padding-top: 10rem;
+padding-bottom: 10rem;
+  background: url("./images/bg3.jpg");
+background-size: cover;
+margin-top: 3rem;
+}
+
+.cool h1{
+  color: white;
+}
+
+.cool h3{
+  color: #999;
+}
+
+ .form-control {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  height: 52px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.submit{
+  background-color: #38d2fe;
+outline: none;
+color: white;
+}
+
+.sub {
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 1.7em;
+  width: 100%;
+  background: #FC427B;
+}
+
+
+.Message_a{
+  height: 164px;
+}
+
+ .address-grid {
+  background-color: #fff;
+  padding: 47px;
+  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
+
+.address-info{
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
+.address h3{
+  color: #555;
+
+}
+.address {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.address h4{
+  color: #38d2fe;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.last{
+  background: #212020;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.last_font{
+  color: white;
+  
+}
+
+.hard_last{
+  padding-bottom: 3rem;
+}
+.img-responsive{
+  padding-bottom: 1rem;
+  margin: auto;
+}
+
+.copy-right a{
+ color: #FC427B;
+}
+
+.copy-right{
+
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* .move-top {
+  width: 34px;
+  height: 34px;
+  background: url(../images/move-top.png) no-repeat 0px 0px;
+  display: inline-block;
+} */

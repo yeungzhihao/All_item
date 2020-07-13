@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      button {
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        background: lightblue;
+        border: none;
+        /* 取消点击以后的外边框 */
+        outline: none;
+        position: relative;
+        overflow: hidden;
+        margin: 100px;
+        z-index: 0;
+      }
+      button i {
+        width: 100px;
+        height: 100px;
+        background: red;
+        display: block;
+        position: absolute;
+        /* bottom: 0;
+        right: 0; */
+        pointer-events: none;
+         /* //鼠标放进去的时候  scale缩小*/
+        transform: scale(0);
+
+        transition: All 1s;
+        border-radius: 50%;
+        opacity: 0;
+        /* //为了不盖住字体 */
+        z-index: -1;
+      }
+      button:hover i {
+          /* //鼠标放进去的时候  scale放大*/
+        transform: scale(5);
+        opacity: 1;
+      }
+      </style>
+</head>
+<body>
+    
+    <button>more<i></i></button>
+    <script>
+        var btn = document.querySelector("button");
+        var dot = btn.querySelector("i");
+  
+        btn.onmousemove = function (event) {
+          console.log(event.offsetX, event.offsetY);
+          dot.style.left = event.offsetX - 50 + "px";
+          dot.style.top = event.offsetY - 50 + "px";
+  
+          // this.classList.add('active')
+        };
+      </script>
+</body>
+</html>
