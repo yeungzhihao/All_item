@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .all_box {
 
-.background{
 
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    
-}
+            margin: auto;
+        }
+
+        .background {
+
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+
+        }
 
         .one {
             width: 800px;
             height: 90px;
             clear: both;
+            margin: auto;
 
         }
 
@@ -53,7 +60,7 @@
             background-color: orange;
             transform: translateY(0deg);
             transition: all 0.8s;
-            transition-timing-function:cubic-bezier(0.05, 0.35, 0.73, 1.49);
+            transition-timing-function: cubic-bezier(0.05, 0.35, 0.73, 1.49);
             z-index: -10;
             position: absolute;
 
@@ -173,17 +180,17 @@
         }
 
 
-           /* //////////////////左 */
+        /* //////////////////左 */
 
 
-  /* //////////////////下 */
+        /* //////////////////下 */
 
 
-  .big_box_two_b {
+        .big_box_two_b {
             width: 135px;
             height: 54px;
             float: left;
-            
+
         }
 
         .box_two_b {
@@ -225,7 +232,8 @@
         .big_box_two_b:hover .box_two_b {
             color: white;
         }
-  /* //////////////////下 */
+
+        /* //////////////////下 */
 
 
         /* 
@@ -346,7 +354,7 @@
 
         }
 
-        /* /////////////////// */
+        /* five */
 
         .big_five {
 
@@ -370,6 +378,8 @@
 
             animation: move 1s linear;
         }
+
+
 
 
         @keyframes move {
@@ -401,7 +411,7 @@
         }
 
 
-        /* ///////////////// */
+        /*           six           */
         .big_six {
 
 
@@ -411,6 +421,7 @@
             transform-origin: center;
             color: #666;
             float: left;
+            margin-right: 10px;
         }
 
         .font_six {
@@ -423,6 +434,42 @@
 
             animation: move 1s linear;
         }
+
+
+        /* seven开始 */
+        .big_seven {
+
+
+            width: 135px;
+            height: 54px;
+            background-color: rgba(160, 160, 160, 0.4);
+            transform-origin: bottom;
+            color: #666;
+            float: left;
+        }
+
+        .font_seven {
+            text-align: center;
+            line-height: 54px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .big_seven:hover {
+
+            animation: move 1s linear;
+        }
+
+
+
+
+        /* seven结束 */
+
+
+
+        /* icon开始 */
+
+
+        /* icon结束 */
 
 
         @keyframes move {
@@ -456,87 +503,103 @@
 </head>
 
 <body>
+    <div class="all_box">
+        <div class="background">Background Transitions</div>
+        <div class="one">
+            <div class="big_box">
+                <div class="box">Sweep To Top
 
-    <div class="background">Background Transitions</div>
-    <div class="one">
-        <div class="big_box">
-            <div class="box">Sweep To Top
-
-                <div class="box_one"></div>
+                    <div class="box_one"></div>
+                </div>
             </div>
-        </div>
 
 
-        <div class="big_box_two">
-            <div class="box_two">Sweep To Right
+            <div class="big_box_two">
+                <div class="box_two">Sweep To Right
 
-                <div class="box_two_t"></div>
+                    <div class="box_two_t"></div>
+                </div>
             </div>
-        </div>
 
 
-        <div class="big_box_two_l">
-            <div class="box_two_l">Sweep To Left
+            <div class="big_box_two_l">
+                <div class="box_two_l">Sweep To Left
 
-                <div class="box_two_t_l"></div>
+                    <div class="box_two_t_l"></div>
+                </div>
             </div>
-        </div>
 
 
 
-        <div class="big_box_two_b">
-            <div class="box_two_b">Sweep To Left
+            <div class="big_box_two_b">
+                <div class="box_two_b">Sweep To Left
 
-                <div class="box_two_t_b"></div>
+                    <div class="box_two_t_b"></div>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <!-- 
+        </div>
+        <!-- 
 //////////////////////////////// -->
-    <div class="one">
+        <div class="one">
 
-        <div class="big_box_three">
-            <div class="three_o">
-                <div class="box_three">
-                    <div class="font">Rectangle In</div>
-                    <div class="box_three_t"></div>
+            <div class="big_box_three">
+                <div class="three_o">
+                    <div class="box_three">
+                        <div class="font">Rectangle In</div>
+                        <div class="box_three_t"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="big_box_four">
+                <div class="four_o">
+                    <div class="box_four">
+                        <div class="font">Rectangle In</div>
+                        <div class="box_four_t"></div>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
+        <!-- ///////////////////////// -->
 
+        <div class="one">
 
-        <div class="big_box_four">
-            <div class="four_o">
-                <div class="box_four">
-                    <div class="font">Rectangle In</div>
-                    <div class="box_four_t"></div>
-                </div>
-
+            <div class="big_five">
+                <div class="font_five">Wobble Vertical</div>
             </div>
 
-        </div>
 
+
+            <div class="big_six">
+                <div class="font_six">Wobble Vertical</div>
+            </div>
+
+
+            <div class="big_seven">
+                <div class="font_seven">Wobble Vertical</div>
+            </div>
+        </div>
     </div>
 
-    <!-- ///////////////////////// -->
-
-    <div class="one">
-
-        <div class="big_five">
-            <div class="font_five">Wobble Vertical</div>
-        </div>
 
 
+    <div class="all_box_two">
 
-        <div class="big_six">
-            <div class="font_six">Wobble Vertical</div>
-        </div>
+        <div class="background">Icons</div>
+
+        <div class="icon"></div>
 
 
+    </div>
 </body>
 
 </html>
