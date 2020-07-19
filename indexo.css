@@ -1,3 +1,12 @@
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+     
+    
+
+
 .navbar-default {
 
     background-color: black;
@@ -51,6 +60,9 @@ transform:scale(1) ;
     transform:scale(1.1) ;
 
 }
+.one{
+    padding-bottom: 2rem;
+}
 
 .one p{
   text-align: center;
@@ -90,7 +102,9 @@ font-weight: bold;
 /* 图片过渡 */
 
 
-
+.box{
+   
+}
 .big_box {
     width: 135px;
     height: 54px;
@@ -99,10 +113,13 @@ font-weight: bold;
     margin:0 auto;
     margin-top: 30px;
     cursor: pointer;
-
+  
 }
 
-
+.navbar-default .navbar-brand:hover {
+    color: white;
+    background-color: transparent;
+}
 .box {
 
     width: 135px;
@@ -148,12 +165,19 @@ font-weight: bolder;
 }
 
 
-.big_box:hover  {
+ .big_box:hover {
     color: black;
 
 font-weight: bold;
+text-decoration: none;
+} 
+.one:hover a{
+    color: black;
 
-}
+font-weight: bold;
+text-decoration: none;
+} 
+
 
 .pic_o{
 padding-bottom: 4rem;
@@ -271,3 +295,79 @@ line-height:54px ;
     margin: auto;
 
 }
+
+.model{
+
+    width: 300px;
+    height: 300px;
+    background-image:url("./b.png") ;
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.sta{
+    width: 300px;
+    height: 300px;
+    background-image:url("./starbucks.png") ;
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+
+
+}
+
+.Apple{
+    width: 300px;
+    height: 300px;
+    background-image:url("./apple.png") ;
+
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+
+
+}
+
+.abcd{
+
+    padding-bottom:10rem ;
+}
+
+
+.v-two-title{
+
+
+    padding-top: 6rem;
+}
+
+
+@media (max-width: 768px) { 
+    .navbar-text{
+
+        display: none;
+    }
+   
+ }
+
+
+@media (min-width: 768px) { 
+    .navbar-text{
+
+        display: none;
+    }
+   
+ }
+ 
+@media (min-width: 992px) { 
+    .navbar-text{
+
+        display: block;
+    }
+   
+ }
